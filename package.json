@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "gulp",
+    "serve": "gulp watch",
     "fix":
       "eslint app/scripts.babel --fix && prettier --single-quote --write 'app/scripts.babel/**/*.js'"
   },

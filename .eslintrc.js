@@ -6,12 +6,13 @@ module.exports = {
   },
   rules: {
     strict: 'off',
-    'no-console': 'warn',
     'arrow-parens': ['warn', 'as-needed'],
     'arrow-body-style': 'off',
-    'comma-dangle': ['warn', 'only-multiline'],
+    'comma-dangle': ['error', 'never'],
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-    'no-console': 'off'
+    'no-console': 'off',
+    'prefer-destructuring': 'off',
+    'no-param-reassign': ['error', { props: false }]
   },
   globals: {
     chrome: true,
