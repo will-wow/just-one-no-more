@@ -6,7 +6,8 @@
     'cad-comic.com': '.random-post-link',
     'penny-arcade.com': '.btnRand',
     'xkcd.com': '[href="//c.xkcd.com/random/comic/"]',
-    'm.xkcd.com': '#rnd_btn_b'
+    'm.xkcd.com': '#rnd_btn_b',
+    'questionablecontent.net': '#comicnav li:nth-child(5) a'
   };
 
   const disabledClass = 'jonm-disabled';
