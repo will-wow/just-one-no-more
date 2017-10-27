@@ -2,12 +2,13 @@
   'use strict';
 
   const randomSelectors = {
-    'smbc-comics.com': '.navaux',
+    'amultiverse.com': '.navi-random',
     'cad-comic.com': '.random-post-link',
-    'penny-arcade.com': '.btnRand',
-    'xkcd.com': '[href="//c.xkcd.com/random/comic/"]',
     'm.xkcd.com': '#rnd_btn_b',
-    'questionablecontent.net': '#comicnav li:nth-child(5) a'
+    'penny-arcade.com': '.btnRand',
+    'questionablecontent.net': '#comicnav li:nth-child(5) a',
+    'smbc-comics.com': '.navaux',
+    'xkcd.com': '[href="//c.xkcd.com/random/comic/"]'
   };
 
   const disabledClass = 'jonm-disabled';
