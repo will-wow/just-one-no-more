@@ -9,29 +9,17 @@
   },
   "default_locale": "en",
   "background": {
-    "scripts": [
-      "scripts/chromereload.js",
-      "scripts/background.js"
-    ]
+    "scripts": ["scripts/chromereload.js", "scripts/background.js"]
   },
-  "permissions": [
-    "tabs",
-    "http://*/*",
-    "https://*/*"
-  ],
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
   "options_ui": {
     "page": "options.html",
     "chrome_style": true
   },
   "content_scripts": [
     {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "js": [
-        "scripts/contentscript.js"
-      ],
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/contentscript.js"],
       "run_at": "document_end",
       "all_frames": false
     }
@@ -41,7 +29,6 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "pitch in button",
-    "default_popup": "popup.html"
+    "default_title": "One More, No More"
   }
 }

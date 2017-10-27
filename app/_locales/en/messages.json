@@ -1,10 +1,12 @@
 {
   "appName": {
-    "message": "just one no more",
-    "description": "The name of the application"
+    "message": "Just One No More",
+    "description":
+      "Prevents you from clicking the \"random\" button on web comics. \"Just one more\", no more!"
   },
   "appDescription": {
-    "message": "Chrome Extension for Just One No More",
-    "description": "The description of the application"
+    "message":
+      "Prevents you from clicking the \"random\" button on web comics.",
+    "description": "\"Just one more\", no more!"
   }
 }

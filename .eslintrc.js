@@ -12,7 +12,8 @@ module.exports = {
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'no-console': 'off',
     'prefer-destructuring': 'off',
-    'no-param-reassign': ['error', { props: false }]
+    'no-param-reassign': ['error', { props: false }],
+    'func-names': 'off'
   },
   globals: {
     chrome: true,
