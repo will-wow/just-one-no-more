@@ -7,7 +7,8 @@
     'm.xkcd.com': '#rnd_btn_b',
     'penny-arcade.com': '.btnRand',
     'questionablecontent.net': '#comicnav li:nth-child(5) a',
-    'smbc-comics.com': '.navaux',
+    'qwantz.com': '.randomquote > a',
+    'smbc-comics.com': '.cc-navaux',
     'xkcd.com': '[href="//c.xkcd.com/random/comic/"]'
   };
 
@@ -72,11 +73,9 @@
   }
 
   function onMessage(message) {
-    console.log('onMessage', message);
     if (!message) return;
 
     const { shouldDisableRandom } = message;
-    console.log('shouldDisableRandom', shouldDisableRandom);
 
     if (shouldDisableRandom) {
       disableRandom();
@@ -88,11 +87,8 @@
   // Start by always turning off the random buttons.
   disableRandom();
 
-  console.log('sending requests');
   // Check with the background to get the button status.
   chrome.runtime.sendMessage({ type: 'get-status' }, onMessage);
   // React to any messages from icon clicks.
   chrome.runtime.onMessage.addListener(onMessage);
-
-  // const element = document.querySelector('foo');
 })();
