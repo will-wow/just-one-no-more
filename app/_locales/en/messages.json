@@ -2,11 +2,11 @@
   "appName": {
     "message": "Just One No More",
     "description":
-      "Prevents you from clicking the \"random\" button on web comics. \"Just one more\", no more!"
+      "Stops you from clicking the \"random\" button on web comics. \"Just one more\", no more!"
   },
   "appDescription": {
     "message":
-      "Prevents you from clicking the \"random\" button on web comics.",
+      "Stops you from clicking the \"random\" button on web comics.",
     "description": "\"Just one more\", no more!"
   }
 }

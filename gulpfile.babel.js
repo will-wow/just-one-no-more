@@ -140,11 +140,11 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('package', function() {
-  var manifest = require('./dist/manifest.json');
+gulp.task('package', () => {
+  const manifest = require('./dist/manifest.json');
   return gulp
     .src('dist/**')
-    .pipe($.zip('pitch in button-' + manifest.version + '.zip'))
+    .pipe($.zip(`pitch in button-${manifest.version}.zip`))
     .pipe(gulp.dest('package'));
 });
 
