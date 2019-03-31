@@ -10,6 +10,12 @@ This extension disables that button on some popular webcomics.
 
 ## Contributing
 
+To add or update a random selector, please submit a Pull Request!
+
+Selectors are stored [here](./app/scripts.babel/contentscript.js).
+You can add a selector there, follow the [Local Development](#local-development) instructions to make sure it works on the site,
+then put up a PR with the change.
+
 ### Install
 
 ```bash
