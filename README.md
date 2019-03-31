@@ -1,6 +1,12 @@
 # Just One, No More
 
-A Chrome extension that stops you from clicking the "random" button on web comics. "Just one more", no more!
+Most webcomics have a "random" button, that will take you to a random comic
+in the archive. It's a nice way to get to know a new comic, but 
+can be a real distraction.
+
+This extension disables that button on some popular webcomics.
+
+"Just one more", no more!
 
 ## Contributing
 
@@ -22,8 +28,14 @@ Then follow the [Chrome instructions](https://support.google.com/chrome/a/answer
 
 ### Deploy
 
-Build the extension
+Bump the version, build the extension, zip the package.
 
 ```bash
+npm version patch
 yarn build
+yarn zip
 ```
+
+Follow [these instructions](https://developer.chrome.com/webstore/publish)
+to publish.
+

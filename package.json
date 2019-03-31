@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "gulp",
+    "zip": "cd dist && zip -r ../app.zip *",
     "serve": "gulp watch",
     "format": "yarn format-eslint && yarn format-prettier",
     "format-eslint": "eslint app/scripts.babel --fix",
